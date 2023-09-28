@@ -24,14 +24,29 @@ setInterval(loadText,4000)
 
 // ======================================
 
-// const ui=document.querySelector('.first-serverc')
-// const hover=document.querySelector('.servec-hover')
-
-// hover.addEventListener('mouseover',()=>{
-//     document.querySelector('.servec-hover').style.display = 'none';
-// })
-// ui.addEventListener("mouseout",()=>{
-//     hover.style.display = 'black';
-// })
 
  AOS.init();
+
+
+
+ const email = document.querySelector('.emailInput');
+ const submit = document.querySelector('.button');
+ const error = document.querySelector('#error');
+ 
+ const showError = () => {
+  error.style.display = 'block';
+  
+};
+
+ submit.addEventListener('click', (e) => {
+     e.preventDefault();
+     if (!email.value.match(/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/)) {
+         return showError();
+     }
+     document.querySelector('#seccese').style.display = 'block';
+  
+   
+
+ });
+
+
