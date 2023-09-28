@@ -44,7 +44,7 @@ setInterval(loadText,4000)
          return showError();
      }
      document.querySelector('#seccese').style.display = 'block';
-  
+    error.style.display = 'none';
    
 
  });
