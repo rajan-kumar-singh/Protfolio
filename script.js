@@ -13,7 +13,7 @@ const loadText = () => {
     text.textContent='Rajan Kumar Singh'
 },0)
 setTimeout(()=>{
-    text.textContent='Front End Developer'
+    text.textContent='mern stack developer'
 },4000)
 
 }
