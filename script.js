@@ -19,7 +19,7 @@ setTimeout(()=>{
 }
 loadText();
 // setInterval(textLoad,4000)
-setInterval(loadText,4000)
+setInterval(loadText,5000)
 
 
 // ======================================
